@@ -18,6 +18,7 @@ export default function TransitionProvider({ children }: TransitionProviderProps
   return (
     <motion.div
       key={pathname}
+      className={pathname === '/mapa' ? '' : 'pt-[100px] pb-16 lg:pb-0'}
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
