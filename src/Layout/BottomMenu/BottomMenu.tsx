@@ -2,14 +2,13 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, LayoutGrid, Users, MapPin, Brain, Search } from 'lucide-react';
+import { Home, LayoutGrid, Users, MapPin, Search } from 'lucide-react';
 
 const MENU_ITEMS = [
   { id: '/', name: 'Główna', icon: Home },
   { id: '/kategorie', name: 'Kategorie', icon: LayoutGrid },
   { id: '/fundacja', name: 'Fundacja', icon: Users },
   { id: '/mapa', name: 'Ośrodki', icon: MapPin },
-  { id: '/brain', name: 'Mózg', icon: Brain },
   { id: '/search', name: 'Szukaj', icon: Search },
 ] as const;
 
